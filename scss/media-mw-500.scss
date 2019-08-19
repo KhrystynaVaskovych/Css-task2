@@ -1,0 +1,56 @@
+@media screen and (max-width: 500px) {
+    .container {
+        width: 310px;
+        height: 60px;
+    }
+
+    .nav {
+        &-menu {
+            flex-wrap: wrap;
+
+            &-link {
+                width: 33%;
+                font-size: 12px;
+                line-height: 15px;
+
+                &-item:hover {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .vertical-icon {
+            display: none;
+        }
+
+    }
+
+    .main {
+        .container {
+            height: 1150px;
+            display: block;
+
+            .pictures-block {
+                &-item {
+                    width: 310px;
+                }
+            }
+
+            .pictures-block-small {
+                flex-wrap: nowrap;
+                width: 310px;
+
+                &-item {
+                    width: 24%;
+                }
+            }
+
+            .description-block {
+                width: 310px;
+                padding: 10px 5px;
+            }
+        }
+    }
+
+
+}

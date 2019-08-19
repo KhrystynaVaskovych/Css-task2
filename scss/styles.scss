@@ -1,0 +1,324 @@
+@import '_variables.scss';
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 818px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.blue-text {
+    color: $blue-color;
+}
+
+.advert {
+    width: 100vw;
+    height: 22px;
+    background-color: $blue-color;
+    text-align: center;
+
+    .container {
+        @include flex-center-center;
+    }
+
+    &-text {
+        width: 98%;
+        height: 100%;
+        font-size: 7px;
+        line-height: $line-height;
+    }
+
+    &-closing-sign {
+        height: 100%;
+        width: 1%;
+        font-size: 15px;
+        line-height: $line-height;
+    }
+
+}
+
+.header {
+    height: 70px;
+
+    &-logo {
+        padding-top: 5px;
+    }
+
+    .container {
+        padding: 23px 0px;
+        @include flex-between;
+    }
+
+    #select-lang {
+        font-size: $font-small;
+        border: none;
+        background-color: $base-color;
+    }
+
+    .btn-cart {
+        width: 90px;
+        height: 30px;
+        border: 2px solid #ded3aa;
+        font-size: $font-small;
+
+        &:hover {
+            border: none;
+            @include hover-button-effect;
+        }
+    }
+}
+
+.nav {
+    text-align: center;
+    @include small-block;
+    @include no-left-right-borders;
+
+    .container {
+        height: 100%;
+        align-items: center;
+        @include flex-between;
+    }
+
+    .drop {
+        margin-left: 10px;
+    }
+
+    &-menu {
+        display: flex;
+
+        &-link {
+            list-style-type: none;
+            width: 75px;
+            font-size: $font-small;
+            height: 15px;
+
+            &-item {
+                display: block;
+
+                &:hover {
+                    font-size: 10px;
+                    color: $blue-color;
+                }
+            }
+        }
+    }
+
+    &-imageset {
+        font-size: 12px;
+    }
+}
+
+.main {
+    .container {
+        height: 727px;
+        display: flex;
+
+        .pictures-block {
+            width: 58%;
+
+            &-item {
+                margin-top: 33px;
+
+                &:hover {
+                    @include hover-pics-effect;
+                }
+            }
+        }
+
+        .pictures-block-small {
+            width: 464px;
+            @include flex-between;
+
+            &-item {
+                margin: 18px 0px;
+
+                &:hover {
+                    @include hover-pics-effect;
+                }
+            }
+        }
+
+        .description-block {
+            width: 43%;
+            padding: 33px 0px 0px 20px;
+
+            &-link {
+                margin-top: 8px;
+                font-size: $font-small;
+            }
+
+            &-title {
+                margin: 20px 0;
+            }
+
+            &-review {
+                display: flex;
+
+                .review-text {
+                    @include underlined-link;
+                }
+
+            }
+
+            &-price {
+                font-size: 18px;
+                color: $blue-color;
+                margin: 10px 0;
+            }
+
+            &-general {
+                font-size: $font-small;
+                font-weight: bold;
+                line-height: $line-height;
+
+                .blue-text {
+                    color: $blue-color;
+                }
+            }
+
+            &-text {
+                margin: 10px 0;
+                line-height: 16px;
+                font-size: 10px;
+
+                &-list {
+                    margin: 14px;
+                }
+            }
+
+            &-select {
+                font-size: 12px;
+                display: flex;
+                position: relative;
+
+                .select-block {
+                    width: 33%;
+
+                    .select {
+                        font-size: $font-small;
+                        padding-left: 10px;
+                        height: 30px;
+                        margin: 10px 0;
+                        border: 1px solid $grey-color;
+                        -webkit-appearance: none;
+                        border-radius: 0px;
+
+                        &:hover {
+                            @include hover-pics-effect;
+                        }
+
+                    }
+
+                    &-color {
+                        width: 45%;
+                        position: relative;
+
+                        &::after {
+                            @include after-triangle;
+                        }
+
+                        &-item {
+                            width: 80%;
+                            color: $grey-color;
+                        }
+                    }
+
+                    &-size {
+                        width: 45%;
+                        position: relative;
+
+                        &::after {
+                            @include after-triangle;
+                        }
+
+                        &-item {
+                            width: 80%;
+                            color: $grey-color;
+                        }
+                    }
+
+                    &-quantity {
+                        width: 15%;
+                        color: $dark-color;
+
+                        &-item {
+                            width: 90%;
+                            padding-left: 25%;
+                            border-radius: 5px;
+                            border: 1px solid $grey-color;
+                        }
+                    }
+                }
+            }
+
+            .clear-section {
+                @include underlined-link;
+            }
+
+            .buttons-set {
+                margin: 30px 0;
+                @include flex-between;
+
+                .button {
+                    width: 47%;
+                    height: 40px;
+                    font-size: $font-small;
+                }
+
+                &-add {
+                    background-color: $dark-color;
+                    color: $base-color;
+
+                    &:hover {
+                        @include hover-button-effect;
+                    }
+                }
+
+                &-wishlist {
+                    &:hover {
+                        @include hover-button-effect;
+                    }
+                }
+            }
+
+            &-share {
+                &-title {
+                    width: 90px;
+                }
+
+                border: 1px solid $beige-color;
+                height: 45px;
+                font-size: $font-small;
+                @include flex-between;
+
+                align-items: center;
+                @include no-left-right-borders;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 19px;
+    color: $light-grey-color;
+    font-size: $font-small;
+    text-align: center;
+    @include small-block;
+}
+
+@import 'media-mw-850.scss', 'media-mw-500.scss';
