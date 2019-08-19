@@ -249,10 +249,20 @@
         flex-wrap: wrap; }
       .main .container .description-block .select-block-color {
         width: 100%; }
+        .main .container .description-block .select-block-color::after {
+          content: url("../img/arrow-point-to-down.png");
+          position: absolute;
+          top: 32px;
+          left: 85%; }
         .main .container .description-block .select-block-color-item {
           width: 100%; }
       .main .container .description-block .select-block-size {
         width: 70%; }
+        .main .container .description-block .select-block-size::after {
+          content: url("../img/arrow-point-to-down.png");
+          position: absolute;
+          top: 32px;
+          left: 72%; }
         .main .container .description-block .select-block-size-item {
           width: 90%; }
       .main .container .description-block .select-block-quantity {
@@ -288,4 +298,14 @@
         width: 24%; }
     .main .container .description-block {
       width: 310px;
-      padding: 10px 5px; } }
+      padding: 10px 5px; }
+      .main .container .description-block .select-block-color::after {
+        content: url("../img/arrow-point-to-down.png");
+        position: absolute;
+        top: 32px;
+        left: 94%; }
+      .main .container .description-block .select-block-size::after {
+        content: url("../img/arrow-point-to-down.png");
+        position: absolute;
+        top: 32px;
+        left: 80%; } }

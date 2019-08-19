@@ -35,11 +35,11 @@ $light-grey-color: #b5b5b5;
     justify-content: space-between;
 }
 
-@mixin after-triangle {
+@mixin after-triangle($left-pos) {
     content: url('../img/arrow-point-to-down.png');
     position: absolute;
     top: 32px;
-    left: 65%;
+    left: $left-pos;
 }
 
 @mixin hover-button-effect {

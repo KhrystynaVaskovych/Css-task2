@@ -1,0 +1,36 @@
+@media screen and (max-width: 850px) {
+  .container {
+    width: 500px; }
+  .main .container {
+    height: 820px; }
+    .main .container .pictures-block {
+      width: 60%; }
+      .main .container .pictures-block-item {
+        width: 300px; }
+    .main .container .pictures-block-small {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .main .container .pictures-block-small-item {
+        margin: 10px 0 0 0;
+        width: 48%; }
+    .main .container .description-block {
+      width: 40%; }
+      .main .container .description-block-review {
+        flex-wrap: wrap; }
+      .main .container .description-block-select {
+        flex-wrap: wrap; }
+      .main .container .description-block .select-block-color {
+        width: 100%; }
+        .main .container .description-block .select-block-color-item {
+          width: 100%; }
+      .main .container .description-block .select-block-size {
+        width: 70%; }
+        .main .container .description-block .select-block-size-item {
+          width: 90%; }
+      .main .container .description-block .select-block-quantity {
+        width: 30%; }
+        .main .container .description-block .select-block-quantity-item {
+          width: 100%; }
+      .main .container .description-block-share-title {
+        display: none; } }

@@ -48,9 +48,17 @@
             .description-block {
                 width: 310px;
                 padding: 10px 5px;
+
+                .select-block {
+                    &-color::after {
+                        @include after-triangle(94%);
+                    }
+
+                    &-size::after {
+                        @include after-triangle(80%);
+                    }
+                }
             }
         }
     }
-
-
 }
