@@ -72,7 +72,7 @@
     .btn-cart {
         width: 90px;
         height: 30px;
-        border: 2px solid #ded3aa;
+        border: 2px solid $gold-color;
         font-size: $font-small;
 
         &:hover {
@@ -108,6 +108,16 @@
 
             &-item {
                 display: block;
+                height: 100%;
+                padding-top: 2px;
+
+                &:link {
+                    color: $dark-color;
+                }
+
+                &:visited {
+                    color: $dark-color;
+                }
 
                 &:hover {
                     font-size: 10px;
