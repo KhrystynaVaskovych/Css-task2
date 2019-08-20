@@ -12,7 +12,6 @@
     font-family: 'Lato';
 }
 
-
 .container {
     margin: 0 auto;
     width: 818px;
@@ -59,8 +58,8 @@
     }
 
     .container {
-        padding: 23px 0px;
         @include flex-between;
+        padding: 23px 0px;
     }
 
     #select-lang {
@@ -76,21 +75,21 @@
         font-size: $font-small;
 
         &:hover {
-            border: none;
             @include hover-button-effect;
+            border: none;
         }
     }
 }
 
 .nav {
-    text-align: center;
     @include small-block;
     @include no-left-right-borders;
+    text-align: center;
 
     .container {
+        @include flex-between;
         height: 100%;
         align-items: center;
-        @include flex-between;
     }
 
     .drop {
@@ -150,8 +149,8 @@
         }
 
         .pictures-block-small {
-            width: 464px;
             @include flex-between;
+            width: 464px;
 
             &-item {
                 margin: 18px 0px;
@@ -178,7 +177,7 @@
             &-review {
                 display: flex;
 
-                .review-text {
+                &-text {
                     @include underlined-link;
                 }
 
@@ -194,10 +193,6 @@
                 font-size: $font-small;
                 font-weight: bold;
                 line-height: $line-height;
-
-                .blue-text {
-                    color: $blue-color;
-                }
             }
 
             &-text {
@@ -230,7 +225,6 @@
                         &:hover {
                             @include hover-pics-effect;
                         }
-
                     }
 
                     &-color {
@@ -280,8 +274,8 @@
             }
 
             .buttons-set {
-                margin: 30px 0;
                 @include flex-between;
+                margin: 30px 0;
 
                 .button {
                     width: 47%;
@@ -306,28 +300,29 @@
             }
 
             &-share {
+
                 &-title {
                     width: 90px;
                 }
 
+                @include flex-between;
+                @include no-left-right-borders;
                 border: 1px solid $beige-color;
                 height: 45px;
                 font-size: $font-small;
-                @include flex-between;
-
                 align-items: center;
-                @include no-left-right-borders;
+
             }
         }
     }
 }
 
 .footer {
+    @include small-block;
     padding: 19px;
     color: $light-grey-color;
     font-size: $font-small;
     text-align: center;
-    @include small-block;
 }
 
 @import 'media-mw-850.scss', 'media-mw-500.scss';

@@ -5,6 +5,7 @@
     }
 
     .nav {
+
         &-menu {
             flex-wrap: wrap;
 
@@ -22,7 +23,6 @@
         .vertical-icon {
             display: none;
         }
-
     }
 
     .main {
@@ -31,6 +31,7 @@
             display: block;
 
             .pictures-block {
+
                 &-item {
                     width: 310px;
                 }
@@ -50,6 +51,7 @@
                 padding: 10px 5px;
 
                 .select-block {
+
                     &-color::after {
                         @include after-triangle(94%);
                     }
